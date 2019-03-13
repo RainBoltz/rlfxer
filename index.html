@@ -1,0 +1,785 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>RL Trader - RLFXer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="assets/images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">RLFXer</a></h1>
+					<p>Reinforcement Learning is cool.<br/>
+					There are still lots of things to learn.</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About Me</a></li>
+						<li><a href="#two">Trading Strategy</a></li>
+						<li><a href="#three">Too Young Too Simple</a></li>
+						<li><a href="#four">Reinforcement Learning</a></li>
+						<li><a href="#five">Training History</a></li>
+						<li><a href="#six">Achievements</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.twitch.tv/rlfxer" target="_blank" class="icon fa-twitch"><span class="label">Twitch</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="center">
+									<img src="assets/images/banner.jpg" alt="" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2>RLFXer</h2>
+										<p>Trained by Reinforcement Learning and <a href="https://github.com/RainBoltz">Philip Wang</a><br />
+											<a href="http://www.forex-central.net/sure-fire-forex-hedging-strategy.php">SURE-FIRE</a> Hedging Strategy is used.</p>
+									</header>
+									<p>&emsp;In recent years, FinTech has become a popular topic. One of the things is "Robo-Advisor", which allows investors to get advice on money management or investment at a low cost. However, most of the investors are not interested in the investing strategies that the robo-advisors executed, instead, they will just choose a robo-advisor according to the past investment performance provided by the industry. There is no way to confidently understand the actual investing strategy.<br>&emsp;The goal of this project is to develop a foreign exchange investment strategy optimization platform.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Sure-Fire </h3>
+									<p>The forex trading technique is simply...awesome. If you are able to look at a chart and identify when the market is trending, then you can make a bundle using the below technique. If we had to pick one single trading technique in the world, this would be the one! Make sure to use proper position sizing and money management with this one and you will encounter nothing but success!</p>
+									<div class="box alt" style="text-align: center;"><img src="assets/images/sure-fire.gif" alt="sure-fire animation" /></div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Too Young Too Simple...</h3>
+									<p>The basic Sure-Fire strategy is based on the sense of a trader. Hyperparameters such as the ratio of take-profit and stop-loss, usually depend on the traders' observation or experience.<br>
+									Here are the results of setting 30 pips of take-profit and 60 pips of stop-loss:</p>
+									<div class="features">
+										<!-- Tab links -->
+										<div class="tab">
+										  <button class="tablinks_1 active" onclick="section1_tab(event, 'section_1_1')">EURUSD</button>
+										  <button class="tablinks_1" onclick="section1_tab(event, 'section_1_2')">GBPUSD</button>
+										  <button class="tablinks_1" onclick="section1_tab(event, 'section_1_3')">AUDUSD</button>
+										</div>
+
+										<!-- Tab content -->
+										<div id="section_1_1" class="tabcontent_1" style="display: block">
+										  <article style="margin: 1em">
+											<a href="#" class="image"><img src="assets/images/constant_EURUSD.png" alt="" /></a>
+											<div class="inner">
+												<h4>EURUSD - 4H<br>2018/08/01~2018/11/30</h4>
+												<p>
+													<div class="table-wrapper">
+														<table class="alt">
+															<tbody style="font-size: 13px">
+																<tr>
+																	<td>Total Trades</td>
+																	<td>Win Trades</td>
+																	<td>Lose Trades</td>
+																</tr>
+																<tr>
+																	<td>866</td>
+																	<td>715</td>
+																	<td>151</td>
+																</tr>
+																<tr>
+																	<td>Net Profit</td>
+																	<td>Profit Factor</td>
+																	<td>Max Drawdown</td>
+																</tr>
+																<tr>
+																	<td>2361</td>
+																	<td>2.32</td>
+																	<td>-3.30%</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</p>
+											</div>
+										  </article>
+										</div>
+
+										<div id="section_1_2" class="tabcontent_1" style="display: none">
+										  <article style="margin: 1em">
+											<a href="#" class="image"><img src="assets/images/constant_GBPUSD.png" alt="" /></a>
+											<div class="inner">
+												<h4>GBPUSD - 4H <br>2018/08/01~2018/11/30</h4>
+												<p>
+													<div class="table-wrapper">
+														<table class="alt">
+															<tbody style="font-size: 13px">
+																<tr>
+																	<td>Total Trades</td>
+																	<td>Win Trades</td>
+																	<td>Lose Trades</td>
+																</tr>
+																<tr>
+																	<td>916</td>
+																	<td>786</td>
+																	<td>130</td>
+																</tr>
+																<tr>
+																	<td>Net Profit</td>
+																	<td>Profit Factor</td>
+																	<td>Max Drawdown</td>
+																</tr>
+																<tr>
+																	<td>3006</td>
+																	<td>2.91</td>
+																	<td>-2.00%</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</p>
+											</div>
+										  </article>
+										</div>
+
+										<div id="section_1_3" class="tabcontent_1" style="display: none">
+										  <article style="margin: 1em">
+											<a href="#" class="image"><img src="assets/images/constant_AUDUSD.png" alt="" /></a>
+											<div class="inner">
+												<h4>AUDUSD - 4H <br>2018/08/01~2018/11/30</h4>
+												<p>
+													<div class="table-wrapper">
+														<table class="alt">
+															<tbody style="font-size: 13px">
+																<tr>
+																	<td>Total Trades</td>
+																	<td>Win Trades</td>
+																	<td>Lose Trades</td>
+																</tr>
+																<tr>
+																	<td>869</td>
+																	<td>695</td>
+																	<td>174</td>
+																</tr>
+																<tr>
+																	<td>Net Profit</td>
+																	<td>Profit Factor</td>
+																	<td>Max Drawdown</td>
+																</tr>
+																<tr>
+																	<td>2032</td>
+																	<td>2.01</td>
+																	<td>-2.95%</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</p>
+											</div>
+										  </article>
+										</div>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four">
+								<div class="container">
+									<h3>Reinforcement Learning</h3>
+									<p>I've been looking for a best algorithm to complete my learning method, so I decided to try both Value-based and Policy-based methods.</p>
+									<div class="features">
+										<article>
+											<a href="#" class="image"><img src="assets/images/dqn.png" alt="" /></a>
+											<div class="inner">
+												<h4>Deep Q Learning (DQN)</h4>
+												<p>The Deep Q learning is about using deep learning techniques to represent the Q table that based on the Q-Learning algorithm.</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="assets/images/ac.png" alt="" /></a>
+											<div class="inner">
+												<h4>Proximal Policy Optimization (PPO)</h4>
+												<p>Policy Gradient methods have convergence problem which is addressed by the natural policy gradient. For this reason, PPO formalizes the constraint as a penalty in the objective function instead of imposing a hard constraint.</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+
+						<!-- Five -->
+							<section id="five">
+								<div class="container">
+									<h3>During Training...</h3>
+									<p>Although Deep Q Learning uses a deep neural network for calculating the Q values, the decisions were made by a simple Value function and it is almost impossible for DQN to solve the complicated problems. <br>
+									Proximal Policy Optimization performs better than DQN, but a policy gradient method will always have to confront a slow convergence.</p>
+									<div class="features">
+                                        <h4>DQN algorithm</h4>
+										<article>
+										<div class="features">
+											<!-- Tab links -->
+											<div class="tab">
+											  <button class="tablinks_2 active" onclick="section2_tab(event, 'section_2_1')">EURUSD</button>
+											  <button class="tablinks_2" onclick="section2_tab(event, 'section_2_2')">GBPUSD</button>
+											  <button class="tablinks_2" onclick="section2_tab(event, 'section_2_3')">AUDUSD</button>
+											</div>
+
+											<!-- Tab content -->
+											<div id="section_2_1" class="tabcontent_2" style="display: block">
+											  <div style="margin: 1em; text-align:center;">
+												<a href="#" class="image" style="width: 80%"><img src="assets/images/DQN_EURUSD.gif" alt="" /></a>
+												
+											  </div>
+											</div>
+
+											<div id="section_2_2" class="tabcontent_2" style="display: none">
+											  <div style="margin: 1em; text-align:center;">
+												<a href="#" class="image" style="width: 80%"><img src="assets/images/DQN_GBPUSD.gif" alt="" /></a>
+												
+											  </div>
+											</div>
+
+											<div id="section_2_3" class="tabcontent_2" style="display: none">
+											  <div style="margin: 1em; text-align:center;">
+												<a href="#" class="image" style="width: 80%"><img src="assets/images/DQN_AUDUSD.gif" alt="" /></a>
+												
+											  </div>
+											</div>
+										</div>
+										</article>
+                                        <h4>PPO algorithm</h4>
+										<article>
+										<div class="features">
+											<!-- Tab links -->
+											<div class="tab">
+											  <button class="tablinks_3 active" onclick="section3_tab(event, 'section_3_1')">EURUSD</button>
+											  <button class="tablinks_3" onclick="section3_tab(event, 'section_3_2')">GBPUSD</button>
+											  <button class="tablinks_3" onclick="section3_tab(event, 'section_3_3')">AUDUSD</button>
+											</div>
+
+											<!-- Tab content -->
+											<div id="section_3_1" class="tabcontent_3" style="display: block">
+											  <div style="margin: 1em; text-align:center;">
+												<a href="#" class="image" style="width: 80%"><img src="assets/images/PPO_EURUSD.gif" alt="" /></a>
+												
+											  </div>
+											</div>
+
+											<div id="section_3_2" class="tabcontent_3" style="display: none">
+											  <div style="margin: 1em; text-align:center;">
+												<a href="#" class="image" style="width: 80%"><img src="assets/images/PPO_GBPUSD.gif" alt="" /></a>
+												
+											  </div>
+											</div>
+
+											<div id="section_3_3" class="tabcontent_3" style="display: none">
+											  <div style="margin: 1em; text-align:center;">
+												<a href="#" class="image" style="width: 80%"><img src="assets/images/PPO_AUDUSD.gif" alt="" /></a>
+												
+											  </div>
+											</div>
+										</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+
+
+						<!-- Six -->
+							<section id="six">
+								<div class="container">
+									<h3>Achievements</h3>
+									<p>Now I will show you the results of trading with the models over the next month...</p>
+									<div class="features">
+                                    <!-- Tab links -->
+                                    <div class="tab">
+                                      <button class="tablinks_4" onclick="section4_tab(event, 'section_4_1')">EURUSD</button>
+                                      <button class="tablinks_4" onclick="section4_tab(event, 'section_4_2')">GBPUSD</button>
+                                      <button class="tablinks_4 active" onclick="section4_tab(event, 'section_4_3')">AUDUSD</button>
+                                    </div>
+
+                                    <!-- Tab content -->
+                                    <div id="section_4_1" class="tabcontent_4" style="display: none">
+                                      <article style="margin: 1em">
+                                        <a href="#" class="image"><img src="assets/images/PPO_EURUSD_TEST.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4>EURUSD - 4H @ 1300episode<br>2018/12/01~2018/12/31</h4>
+                                            <p>
+                                                <div class="table-wrapper">
+                                                    <table class="alt" style="font-size: 13px">
+                                                        <thead>
+                                                            <tr>
+                                                                <td> </td>
+                                                                <td>Net Profit</td>
+                                                                <td>Profit Factor</td>
+                                                                <td>Max Drawdown</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>PPO</td>
+                                                                <td>546</td>
+                                                                <td>3.09</td>
+                                                                <td><b style="color:black">-4.03%<b></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Baseline</td>
+                                                                <td><b style="color:black">753<b></td>
+                                                                <td><b style="color:black">3.67<b></td>
+                                                                <td>-5.18%</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </p>
+                                        </div>
+                                      </article>
+                                    </div>
+                                    
+                                    <div id="section_4_2" class="tabcontent_4" style="display: none">
+                                      <article style="margin: 1em">
+                                      <a href="#" class="image"><img src="assets/images/PPO_GBPUSD_TEST.png" alt="" /></a>
+                                      <div class="inner">
+                                            <h4>GBPUSD - 4H @ 1300episode<br>2018/12/01~2018/12/31</h4>
+                                            <p>
+                                                <div class="table-wrapper">
+                                                    <table class="alt" style="font-size: 13px">
+                                                        <thead>
+                                                            <tr>
+                                                                <td> </td>
+                                                                <td>Net Profit</td>
+                                                                <td>Profit Factor</td>
+                                                                <td>Max Drawdown</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>PPO</td>
+                                                                <td>722</td>
+                                                                <td><b style="color:black">4.19<b></td>
+                                                                <td><b style="color:black">-4.57%<b></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Baseline</td>
+                                                                <td><b style="color:black">753<b></td>
+                                                                <td>3.24</td>
+                                                                <td>-5.58%</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </p>
+                                        </div>
+                                      </article>
+                                    </div>
+
+                                    <div id="section_4_3" class="tabcontent_4" style="display: block">
+                                      <article style="margin: 1em">
+                                        <a href="#" class="image"><img src="assets/images/PPO_AUDUSD_TEST.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4>AUDUSD - 4H @ 1300episode<br>2018/12/01~2018/12/31</h4>
+                                            <p>
+                                                <div class="table-wrapper">
+                                                    <table class="alt" style="font-size: 13px">
+                                                        <thead>
+                                                            <tr>
+                                                                <td> </td>
+                                                                <td>Net Profit</td>
+                                                                <td>Profit Factor</td>
+                                                                <td>Max Drawdown</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>PPO</td>
+                                                                <td><b style="color:black">512</b></td>
+                                                                <td><b style="color:black">2.35</b></td>
+                                                                <td><b style="color:black">-5.37%</b></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Baseline</td>
+                                                                <td>351</td>
+                                                                <td>1.62</td>
+                                                                <td>-14.53%</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </p>
+                                        </div>
+                                      </article>
+                                    </div>
+                                    </div>
+								</div>
+							</section>
+
+
+
+                        
+						<!-- Alter -->
+						<!--
+							<section id="five">
+								<div class="container">
+									<h3>Elements</h3>
+
+									<section>
+										<h4>Text</h4>
+										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+										<hr />
+										<header>
+											<h4>Heading with a Subtitle</h4>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<header>
+											<h5>Heading with a Subtitle</h5>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<hr />
+										<h2>Heading Level 2</h2>
+										<h3>Heading Level 3</h3>
+										<h4>Heading Level 4</h4>
+										<h5>Heading Level 5</h5>
+										<h6>Heading Level 6</h6>
+										<hr />
+										<h5>Blockquote</h5>
+										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+										<h5>Preformatted</h5>
+										<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+									</section>
+
+									<section>
+										<h4>Lists</h4>
+										<div class="row">
+											<div class="col-6 col-12-xsmall">
+												<h5>Unordered</h5>
+												<ul>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+												<h5>Alternate</h5>
+												<ul class="alt">
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<h5>Ordered</h5>
+												<ol>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ol>
+												<h5>Icons</h5>
+												<ul class="icons">
+													<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+													<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+													<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+													<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+													<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+													<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+												</ul>
+											</div>
+										</div>
+										<h5>Actions</h5>
+										<ul class="actions">
+											<li><a href="#" class="button primary">Default</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Default</a></li>
+										</ul>
+										<ul class="actions small">
+											<li><a href="#" class="button primary small">Small</a></li>
+											<li><a href="#" class="button small">Small</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<div class="row">
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary">Default</a></li>
+													<li><a href="#" class="button">Default</a></li>
+													<li><a href="#" class="button alt">Default</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6 col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary small">Small</a></li>
+													<li><a href="#" class="button small">Small</a></li>
+													<li><a href="#" class="button alt small">Small</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary fit">Default</a></li>
+													<li><a href="#" class="button fit">Default</a></li>
+													<li><a href="#" class="button alt fit">Default</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary small fit">Small</a></li>
+													<li><a href="#" class="button small fit">Small</a></li>
+													<li><a href="#" class="button alt small fit">Small</a></li>
+												</ul>
+											</div>
+										</div>
+									</section>
+
+									<section>
+										<h4>Table</h4>
+										<h5>Default</h5>
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody style="font-size: 13px">
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+
+										<h5>Alternate</h5>
+										<div class="table-wrapper">
+											<table class="alt">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody style="font-size: 13px">
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+									</section>
+
+									<section>
+										<h4>Buttons</h4>
+										<ul class="actions">
+											<li><a href="#" class="button primary">Primary</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Alternate</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button primary large">Large</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<ul class="actions fit">
+											<li><a href="#" class="button primary fit">Fit</a></li>
+											<li><a href="#" class="button fit">Fit</a></li>
+											<li><a href="#" class="button alt fit">Fit</a></li>
+										</ul>
+										<ul class="actions fit small">
+											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+											<li><a href="#" class="button fit small">Fit + Small</a></li>
+											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button primary icon fa-download">Icon</a></li>
+											<li><a href="#" class="button icon fa-download">Icon</a></li>
+											<li><a href="#" class="button alt icon fa-check">Icon</a></li>
+										</ul>
+										<ul class="actions">
+											<li><span class="button primary disabled">Primary</span></li>
+											<li><span class="button disabled">Default</span></li>
+											<li><span class="button alt disabled">Alternate</span></li>
+										</ul>
+									</section>
+
+									<section>
+										<h4>Form</h4>
+										<form method="post" action="#">
+											<div class="row gtr-uniform">
+												<div class="col-6 col-12-xsmall">
+													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-xsmall">
+													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<select name="demo-category" id="demo-category">
+														<option value="">- Category -</option>
+														<option value="1">Manufacturing</option>
+														<option value="1">Shipping</option>
+														<option value="1">Administration</option>
+														<option value="1">Human Resources</option>
+													</select>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+													<label for="demo-priority-low">Low Priority</label>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-normal" name="demo-priority">
+													<label for="demo-priority-normal">Normal Priority</label>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-high" name="demo-priority">
+													<label for="demo-priority-high">High Priority</label>
+												</div>
+												<div class="col-6 col-12-medium">
+													<input type="checkbox" id="demo-copy" name="demo-copy">
+													<label for="demo-copy">Email me a copy of this message</label>
+												</div>
+												<div class="col-6 col-12-medium">
+													<input type="checkbox" id="demo-human" name="demo-human" checked>
+													<label for="demo-human">I am a human and not a robot</label>
+												</div>
+												<div class="col-12">
+													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" value="Send Message" /></li>
+														<li><input type="reset" value="Reset" class="alt" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+									<section>
+										<h4>Image</h4>
+										<h5>Fit</h5>
+										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											</div>
+										</div>
+										<h5>Left &amp; Right</h5>
+										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									</section>
+
+								</div>
+							</section>
+						-->
+
+					</div> 
+				
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
