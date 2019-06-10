@@ -314,7 +314,7 @@
                                     <!-- Tab content -->
                                     <div id="section_4_1" class="tabcontent_4" style="display: none">
                                       <article style="margin: 1em">
-                                        <a href="#" class="image"><img src="assets/images/PPO_EURUSD_TEST.png" alt="" /></a>
+                                        <a onclick="show_modal(this)" class="image haveModalImg"><img src="assets/images/EURUSD_TEST.png" alt="EURUSD testing results" /></a>
                                         <div class="inner">
                                             <h4>EURUSD - 4H @ 1300episode<br>2018/12/01~2018/12/31</h4>
                                             <p>
@@ -330,16 +330,22 @@
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td>PPO</td>
-                                                                <td>546</td>
-                                                                <td>3.09</td>
-                                                                <td><b style="color:black">-4.03%<b></td>
+                                                                <td>Baseline</td>
+                                                                <td><b style="color:black">753</td>
+                                                                <td>3.67<b></td>
+                                                                <td>-5.18%</td>
                                                             </tr>
                                                             <tr>
-                                                                <td>Baseline</td>
-                                                                <td><b style="color:black">753<b></td>
-                                                                <td><b style="color:black">3.67<b></td>
-                                                                <td>-5.18%</td>
+                                                                <td>DQN</td>
+                                                                <td>486</td>
+                                                                <td>3.09</td>
+                                                                <td>-3.70%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>PPO</td>
+                                                                <td>615</td>
+                                                                <td><b style="color:black">3.82<b></td>
+                                                                <td><b style="color:black">-2.92%<b></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -351,7 +357,7 @@
                                     
                                     <div id="section_4_2" class="tabcontent_4" style="display: none">
                                       <article style="margin: 1em">
-                                      <a href="#" class="image"><img src="assets/images/PPO_GBPUSD_TEST.png" alt="" /></a>
+                                      <a onclick="show_modal(this)" class="image haveModalImg"><img src="assets/images/GBPUSD_TEST.png" alt="GBPUSD testing results" /></a>
                                       <div class="inner">
                                             <h4>GBPUSD - 4H @ 1300episode<br>2018/12/01~2018/12/31</h4>
                                             <p>
@@ -367,16 +373,22 @@
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td>PPO</td>
-                                                                <td>722</td>
-                                                                <td><b style="color:black">4.19<b></td>
-                                                                <td><b style="color:black">-4.57%<b></td>
-                                                            </tr>
-                                                            <tr>
                                                                 <td>Baseline</td>
-                                                                <td><b style="color:black">753<b></td>
+                                                                <td>753<b></td>
                                                                 <td>3.24</td>
                                                                 <td>-5.58%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>DQN</td>
+                                                                <td>717</td>
+                                                                <td>3.10</td>
+                                                                <td>-4.63%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>PPO</td>
+                                                                <td><b style="color:black">763<b></td>
+                                                                <td><b style="color:black">4.47<b></td>
+                                                                <td><b style="color:black">-4.33%<b></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -388,7 +400,7 @@
 
                                     <div id="section_4_3" class="tabcontent_4" style="display: block">
                                       <article style="margin: 1em">
-                                        <a href="#" class="image"><img src="assets/images/PPO_AUDUSD_TEST.png" alt="" /></a>
+                                        <a onclick="show_modal(this)" class="image haveModalImg"><img src="assets/images/AUDUSD_TEST.png" alt="AUDUSD testing results" /></a>
                                         <div class="inner">
                                             <h4>AUDUSD - 4H @ 1300episode<br>2018/12/01~2018/12/31</h4>
                                             <p>
@@ -404,16 +416,22 @@
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td>PPO</td>
-                                                                <td><b style="color:black">512</b></td>
-                                                                <td><b style="color:black">2.35</b></td>
-                                                                <td><b style="color:black">-5.37%</b></td>
-                                                            </tr>
-                                                            <tr>
                                                                 <td>Baseline</td>
                                                                 <td>351</td>
                                                                 <td>1.62</td>
                                                                 <td>-14.53%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>DQN</td>
+                                                                <td>402</td>
+                                                                <td>2.32</td>
+                                                                <td><b style="color:black">-5.97%</b></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>PPO</td>
+                                                                <td><b style="color:black">597</b></td>
+                                                                <td><b style="color:black">2.85</b></td>
+                                                                <td>-7.62%</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -439,6 +457,12 @@
 					</section>
 
 			</div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <span class="modal-close-btn">&times;</span>
+              <img class="modal-content" id="modal-img">
+              <div id="modal-caption"></div>
+            </div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

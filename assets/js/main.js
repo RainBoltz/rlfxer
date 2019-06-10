@@ -246,3 +246,23 @@ function section4_tab(evt, tabtitle) {
   document.getElementById(tabtitle).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+function show_modal(e){
+    var the_img = e.childNodes[0];
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("modal-img").src = the_img.src;
+    
+    console.log(the_img.alt);
+    document.getElementById("modal-caption").innerHTML = the_img.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("modal-close-btn")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  document.getElementById("myModal").style.display = "none";
+}
+
+
+
+
